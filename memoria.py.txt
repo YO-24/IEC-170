@@ -1,0 +1,16 @@
+print("Paso 1: Asignar a = 10")
+a = 10
+print(f"a <-- {a} | id(a): {hex(id(a))}")
+
+print("\nPaso 2: Guardar respaldo = a")
+respaldo = a
+print("respaldo <--", respaldo, "| id(respaldo):", hex(id(respaldo)))
+
+print("\nPaso 3: Cambiar a = 20")
+a = 20
+print("a <--", a, "| id(a):", hex(id(a)))
+
+print("\nPaso 4: Volver a apuntar a = respaldo")
+a = respaldo
+print("a <--", a, "| id(a):", hex(id(a)))
+

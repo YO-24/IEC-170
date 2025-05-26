@@ -1,0 +1,27 @@
+#probaremos como validar un entero
+validos = ["0","1","2","3","4","5","6","7","8","9"]
+
+ok = True
+repite = True
+while repite:
+    num =  input("Ingrese un numero: ")
+    num = num.strip()  # quita espacios izq. y der.
+    print(f"num sin espacio : {num}")
+    largo = len ( num ) # determina el largo o numero de caracteres 
+    print(f"largo: {largo}")
+    #verificamos cada caracter en la lista de validos
+    for i in range( largo ):
+        print(f"num[{i}]: {num[i]}")
+        if num[i] not in validos:
+            ok = False
+        print(f"repite: {repite} -  ok: {ok}")
+    if ok:
+        repite = False
+    else:
+        ok = True
+if ok:
+    print("solo numeros")
+else:
+    print("no son numeros")
+
+

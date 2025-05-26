@@ -1,0 +1,30 @@
+#funciones
+
+def fn_suma(a, b):
+    resp = a + b
+    return resp
+
+def fn_resta(a, b):
+    resp = a - b
+    return resp
+
+#programa principal
+try:
+    num1 = int( input("ingrese un nro: "))
+    num2 = int( input("ingrese otro nro: "))
+
+    suma = fn_suma(num1, num2)
+    resta = fn_resta(num1, num2)
+    multi = num1 * num2
+    divi = num1 / num2
+    print(f"la division es: {divi} ")
+    print(f"la suma es: {suma} ")
+    print(f"la resta es: {resta} ")
+    print(f"la nultiplicacion es: {multi} ")
+except ValueError:
+    print("No ES UN DATO VALIDO")
+except ZeroDivisionError:
+    print("No se puede dividir entre cero")
+except Exception:
+    print("No supe qué pasó")
+print("Fin.")

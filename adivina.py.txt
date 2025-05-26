@@ -1,0 +1,19 @@
+from random import randint
+
+num = randint(1,100)
+adivina = False
+intentos = 0
+while not adivina:
+    #print( "adivina: ")
+    x = int(input("adivina: "))
+    intentos = intentos + 1
+    if (x < num):
+        print( "Es mayor")
+    else:
+            if (x > num) :
+                print( "Es menor")
+            else:
+                #en esta parte, los numeros son iguales
+                adivina = True
+print("Correcto, mi numero es ",num)
+print("adivinaste en ",intentos)

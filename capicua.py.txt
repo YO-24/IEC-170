@@ -1,0 +1,12 @@
+# print("Ingrese un nro: "
+# leer num
+num = int(input("Ingrese un nro: "))
+resp = num
+resto = 0
+while num != 0 :
+    resto = resto * 10 + (num % 10)
+    num = num // 10
+if resp == resto :
+    print("Es capicúa")
+else:
+    print("No es capicúa")

@@ -1,0 +1,23 @@
+#          0  1  2  3  4   
+numeros = [3,45,12,48,53]
+print("numeros => ",numeros)
+numeros.append( 15 )
+print("numeros => ",numeros)
+# del numeros[3]
+# print(numeros)
+num = int(input("Numero a borrar: "))
+if (num in numeros):
+    posicion = numeros.index(num)
+    print(posicion)
+    del numeros[posicion]
+else:
+    print ("no hinche")
+# print("numeros => ",numeros)
+#numeros.reverse()
+print("numeros => ",numeros)
+largo = len ( numeros)
+for i in range(largo):
+    print(f"i = {i} : {numeros[i]}")
+
+for num in numeros:
+    print( num )

@@ -1,0 +1,18 @@
+"""
+Las excepciones son errores que ocurren mientras ejecuta el 
+programa. Ejemplo dividir entre cero  o intentar convertir letras en números.
+
+si no las manejamos el programa se detiene. Pero si las capturanmos y controlamos
+podemos evitar que el programa termine abruptamente o "se caiga"
+"""
+try:
+    num1 = int(input("Ingrese un nro: "))
+    num2 = int(input("Otro nro: "))
+    num = num1 / num2
+    print( num )
+except ZeroDivisionError:
+    print("El divisor no debe ser cero")
+except ValueError:
+    print("Sólo de admiten numeros")
+except Exception:
+    print("Oops. algo salió mal")
